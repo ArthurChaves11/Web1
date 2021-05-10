@@ -1,0 +1,94 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+.grid {
+    display: grid;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: content;
+}
+
+#desktop {
+    height: 100px;
+}
+
+.sidenav {
+    grid-area: sidenav;
+}
+
+.advert {
+    grid-area: advert;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-template-areas-3 {
+    height: 500px;
+    display: none;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "logo nav" "content content" "footer footer";
+}
+
+.grid-template-areas-4 {
+    height: 500px;
+    width: 100%;
+    grid-template-columns: 30% 60% 10%;
+    grid-template-areas: "nav nav nav" "sidenav content content" "sidenav footer footer";
+}
+
+
+/* Grid Item */
+
+.item {
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.grid {
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+body {
+    font-family: monospace;
+    color: #333;
+    padding-bottom: 60px;
+    margin: 0px;
+}
+
+#mobile {
+    height: 400px;
+}
+
+@media screen and (max-width: 992px) {
+    .grid-template-areas-3 {
+        display: grid !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .grid-template-areas-4 {
+        display: none !important;
+    }
+}
