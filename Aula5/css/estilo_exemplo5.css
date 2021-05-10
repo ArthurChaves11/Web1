@@ -1,0 +1,44 @@
+/*Arquivo CSS*/
+
+
+
+
+section {
+	width:100%;
+	margin:auto;
+}
+
+aside {
+	width:30%;
+	height:550px;
+	background:#000;
+	float:left;
+	color:#F0F8FF;
+}
+
+nav {
+	width:70%;
+	height:50px;
+	background:#008B8B;
+	float:right;
+	color:#F0F8FF;
+}
+
+
+main {
+	width:70%;
+	height:450px;
+	float:right;
+}
+
+footer {
+	width:70%;
+	height:50px;
+	float:right;
+	background:#008B8B;
+	color: #F0F8FF
+	
+}
+
+
+
